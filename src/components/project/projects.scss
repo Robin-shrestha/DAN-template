@@ -1,0 +1,68 @@
+@import "../../app.scss";
+img {
+  width: 100%;
+}
+
+.root-projects {
+  img {
+    height: 50vh;
+    object-fit: cover;
+    object-position: bottom;
+    @media only screen and (max-width: $md) {
+      object-fit: fill;
+    }
+  }
+  .container-projects {
+    padding: 3rem;
+    h1 {
+      margin: 2rem 0;
+    }
+
+    .container-projects-inner {
+      padding: 1rem 0;
+      .container-project {
+        display: flex;
+        align-items: flex-start;
+        margin: 3rem 0;
+        @media only screen and (max-width: $md) {
+          flex-direction: column;
+        }
+        .container-project-img {
+          flex: 1 1 40%;
+          img {
+            object-fit: fill;
+          }
+        }
+        .container-project-desc {
+          flex: 1 1 60%;
+          flex-direction: column;
+          padding: 2rem 4rem;
+          @media only screen and (max-width: $md) {
+            padding: 2rem 0;
+          }
+
+          h2 {
+            margin-bottom: 2rem;
+          }
+          p {
+            font-size: 1.25rem;
+            line-height: 1.75rem;
+            font-weight: 400;
+          }
+          ul {
+            list-style: inside;
+            padding: 1rem 0;
+            li {
+              padding-left: 3em;
+              line-height: 2em;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.container-btn {
+  text-align: right;
+  padding: 0 4rem;
+}

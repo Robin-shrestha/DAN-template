@@ -1,0 +1,48 @@
+@import "../../app.scss";
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.root-footer {
+  background-color: $bg-color1;
+  padding: 84px 72px;
+  color: white;
+  .flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    @media only screen and (max-width: $md) {
+      flex-direction: column;
+      justify-content: start;
+    }
+
+    .footer-subcontainers {
+      padding: 8px 32px;
+      @media only screen and (max-width: $md) {
+        margin-bottom: 2rem;
+        padding: 1rem;
+      }
+      width: 100%;
+      h1,
+      h2,
+      h3,
+      h4 {
+        font-weight: 800;
+        margin-bottom: 1rem;
+      }
+      ul {
+        list-style: none;
+        li {
+          padding: 8px 4px;
+          font-size: large;
+
+          a:hover {
+            font-weight: 700;
+          }
+        }
+      }
+    }
+  }
+}

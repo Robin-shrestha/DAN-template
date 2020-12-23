@@ -1,0 +1,52 @@
+@import "../../app.scss";
+
+.container-btn {
+  text-align: left;
+  padding: 0;
+}
+.container-flexbox {
+  display: flex;
+}
+h3 {
+  margin-bottom: 1rem;
+}
+p {
+  line-height: 1.75rem;
+  font-size: 1.15rem;
+  font-weight: 500;
+}
+.root-services-specialization {
+  background-image: url(../../media/buildings/service1.jpg);
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 200px 4rem 100px 4rem;
+  @media only screen and (max-width: $md) {
+    padding: 200px 2rem 100px 2rem;
+  }
+  .container-specializations {
+    .flex-specializations {
+      flex-wrap: wrap;
+      flex-direction: row;
+      margin: 3em 0;
+    }
+    .flex-item {
+      flex: 0 0 33%;
+      min-width: 250px;
+    }
+    .container-specialization {
+      margin: 1em;
+    }
+  }
+  .container-services {
+    margin-top: 5em;
+    .flex-services {
+      flex-direction: column;
+      margin: 3rem 0;
+    }
+    .container-service {
+      max-width: 350px;
+      margin: 1rem 0;
+    }
+  }
+}

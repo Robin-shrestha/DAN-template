@@ -1,0 +1,44 @@
+.root-navbar {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 1em 0;
+  .navbar-logo {
+    padding: 0 2em;
+    img {
+      width: 64px;
+      height: 64px;
+    }
+  }
+  .navbar-navigation {
+    ul {
+      display: flex;
+      list-style: none;
+      padding-top: 16px;
+      flex-wrap: wrap;
+
+      li {
+        padding: 1.25em 1.35em 0.65em 1.35em;
+
+        a {
+          border: none;
+          background: transparent;
+          font-weight: 800;
+          padding-bottom: 0.45em;
+          color: black;
+
+          text-transform: uppercase;
+        }
+        a:hover {
+          cursor: pointer;
+          transform: scale(1.05);
+          border-bottom: red 1px solid;
+        }
+        .active {
+          border-bottom: red 2px solid;
+        }
+      }
+    }
+  }
+}

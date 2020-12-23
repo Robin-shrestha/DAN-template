@@ -1,0 +1,56 @@
+@import "../../app.scss";
+
+.root-about {
+  background-image: url(../../media/buildings/home5.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  padding: 200px 2em;
+  padding-bottom: 100px;
+
+  .container-about {
+    .about-para {
+      width: 50vw;
+      padding-left: 3rem;
+      margin-bottom: 7rem;
+      @media only screen and (max-width: $md) {
+        width: fit-content;
+        margin-bottom: 5rem;
+        padding: 1rem;
+      }
+      h1 {
+        margin: 20px 0;
+      }
+      p {
+        line-height: 1.75em;
+        font-weight: 600;
+      }
+    }
+    .container-whyus {
+      h1 {
+        padding-left: 3rem;
+      }
+      .whyus-flex-container {
+        display: flex;
+        padding: 3rem 1rem 1rem 1rem;
+        @media only screen and (max-width: $md) {
+          flex-direction: column;
+        }
+        .whyus-points {
+          color: white;
+          background-color: $bg-color1;
+          margin: 1.25rem;
+          padding: 1rem;
+          h3 {
+            text-align: center;
+            margin-bottom: 2rem;
+          }
+          p {
+            font-size: 1.125rem;
+            font-weight: 500;
+          }
+        }
+      }
+    }
+  }
+}
